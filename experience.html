@@ -4,39 +4,58 @@
   <meta charset="UTF-8">
   <title>Experience</title>
   <style>
-    body { 
-      font-family: Arial, sans-serif; 
-      margin: 0; 
-      padding: 0; 
-      background: #f1f9ff; 
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f1f9ff;
     }
-    .container { 
-      max-width: 800px; 
-      margin: 0 auto; 
-      padding: 40px 20px; 
-      text-align: left; /* 修改为左对齐 */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
     }
     nav {
       text-align: center;
       margin-bottom: 30px;
     }
-    nav a { 
-      margin: 0 12px; 
-      text-decoration: none; 
-      color: #4B0082; 
-      font-weight: bold; 
-    }
-    ul { 
-      text-align: left; 
-      display: inline-block; 
-      margin-top: 20px; 
-    }
-    li { 
-      margin-bottom: 20px; 
-      line-height: 1.6; 
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #4B0082;
+      font-weight: bold;
     }
     h1 {
-      margin-bottom: 20px; /* 增加标题下空一行 */
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .experience {
+      margin-bottom: 40px;
+    }
+    .title-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .title-left {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .title-right {
+      font-size: 14px;
+      color: #444;
+    }
+    .company {
+      font-size: 15px;
+      margin-top: 4px;
+      margin-bottom: 12px;
+    }
+    ul {
+      padding-left: 20px;
+      line-height: 1.6;
+    }
+    li {
+      margin-bottom: 12px;
     }
   </style>
 </head>
@@ -54,31 +73,40 @@
     <h1>Professional Experience</h1>
 
     <div class="experience">
-      <h3>Quantitative Research Intern, First State Cinda Fund Management – Shanghai, China</h3>
-      <p>Dec. 2024 – Jan. 2025</p>
+      <div class="title-line">
+        <div class="title-left">Quantitative Research Intern</div>
+        <div class="title-right">Dec. 2024 – Jan. 2025</div>
+      </div>
+      <div class="company">First State Cinda Fund Management – Shanghai, China</div>
       <ul>
-        <li>Developed a multi-objective genetic programming framework for factor mining, applying IC and NDCG fitness metrics and leveraging NSGA‑II to select Pareto‑optimal factors while preserving population diversity</li>
-        <li>Designed 64 genetic operators, including cross-sectional and time-series operators, to boost factor explanatory power, and validated their long-term robustness via out-of-sample screening</li>
-        <li>Synthesized a composite factor from the top 10 IR-ranked factors, yielding 21.7% annualized excess return, 1.45 Sharpe ratio, and −23.1% max drawdown across validation and test sets</li>
+        <li>Developed a multi-objective genetic programming framework for factor mining, applying IC and NDCG fitness metrics and leveraging NSGA‑II to select Pareto‑optimal factors while preserving population diversity.</li>
+        <li>Designed 64 genetic operators, including cross-sectional and time-series operators, to boost factor explanatory power, and validated their long-term robustness via out-of-sample screening.</li>
+        <li>Synthesized a composite factor from the top 10 IR-ranked factors, yielding 21.7% annualized excess return, 1.45 Sharpe ratio, and −23.1% max drawdown across validation and test sets.</li>
       </ul>
     </div>
 
     <div class="experience">
-      <h3>Data Analytics Intern, Guosheng Security – Shanghai, China</h3>
-      <p>July 2023 – Aug. 2023</p>
+      <div class="title-line">
+        <div class="title-left">Data Analytics Intern</div>
+        <div class="title-right">July 2023 – Aug. 2023</div>
+      </div>
+      <div class="company">Guosheng Security – Shanghai, China</div>
       <ul>
-        <li>Built classification models to extract predictive price‑movement signals from financial news using logistic regression, random forest, XGBoost, and LSTM, achieving over 72% accuracy in forecasting short‑term stock direction</li>
-        <li>Executed time series similarity analysis on thousands of fund NAV curves using DTW and other metrics, ranking funds by resemblance to a target and generating a pool for alternative selection</li>
-        <li>Engineered an ETL pipeline to integrate client trade data with historical trends, generating trading preference labels for personalized strategy recommendations</li>
+        <li>Built classification models to extract predictive price‑movement signals from financial news using logistic regression, random forest, XGBoost, and LSTM, achieving over 72% accuracy in forecasting short‑term stock direction.</li>
+        <li>Executed time series similarity analysis on thousands of fund NAV curves using DTW and other metrics, ranking funds by resemblance to a target and generating a pool for alternative selection.</li>
+        <li>Engineered an ETL pipeline to integrate client trade data with historical trends, generating trading preference labels for personalized strategy recommendations.</li>
       </ul>
     </div>
 
     <div class="experience">
-      <h3>Risk Management Intern, Fullgoal Fund Management – Shanghai, China</h3>
-      <p>May 2023 – July 2023</p>
+      <div class="title-line">
+        <div class="title-left">Risk Management Intern</div>
+        <div class="title-right">May 2023 – July 2023</div>
+      </div>
+      <div class="company">Fullgoal Fund Management – Shanghai, China</div>
       <ul>
-        <li>Automated daily risk monitoring workflows in Python by analyzing a dataset of 4,000+ stocks, generating real-time compliance alerts and market risk insights for fund managers</li>
-        <li>Improved reconciliation accuracy by refining variance analysis algorithms and identifying mismatches between financial reports and actuals for semi-annual audits</li>
+        <li>Automated daily risk monitoring workflows in Python by analyzing a dataset of 4,000+ stocks, generating real-time compliance alerts and market risk insights for fund managers.</li>
+        <li>Improved reconciliation accuracy by refining variance analysis algorithms and identifying mismatches between financial reports and actuals for semi-annual audits.</li>
       </ul>
     </div>
   </div>
