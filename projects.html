@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head><title>Projects</title></head>
+<head>
+  <meta charset="UTF-8">
+  <title>Projects</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fff; }
+    .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; text-align: center; }
+    nav a { margin: 0 12px; text-decoration: none; color: #4B0082; font-weight: bold; }
+    ul { text-align: left; display: inline-block; margin-top: 20px; }
+    li { margin-bottom: 20px; line-height: 1.6; }
+  </style>
+</head>
 <body>
-  <nav>
-    <a href="index.html">Home</a> | <a href="about.html">About Me</a> | <a href="experience.html">Experience</a> | <a href="misc.html">Misc</a> | <a href="Yixuan_Wu_Resume.QR.pdf">Resume</a>
-  </nav>
-  <h1>Projects</h1>
+  <div class="container">
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About Me</a> |
+      <a href="projects.html">Projects</a> |
+      <a href="experience.html">Experience</a> |
+      <a href="misc.html">Misc</a> |
+      <a href="resume.html">Resume</a>
+    </nav>
 
-  <h3>Limit Order Execution Algorithm Design</h3>
-  <p>Designed a strategy that uses high-frequency limit order book data and ML classifiers to identify optimal trading times. Performance evaluated against a TWAP benchmark.</p>
-
-  <h3>LVaR Portfolio Optimization with Dynamic Liquidity Constraints</h3>
-  <p>Built an LVaR-based portfolio model accounting for market regimes and sector-specific liquidation times using VIX and volume data. Validated with COVID-era stress tests.</p>
+    <h1>Projects</h1>
+    <ul>
+      <li><strong>Limit Order Execution Algorithm Design:</strong> Built a machine learning-based algorithm using limit order book data to identify optimal trading points. Integrated real-time monitoring and fallback systems. Outperformed TWAP benchmark.</li>
+      <li><strong>LVaR Portfolio Optimization:</strong> Designed a regime-aware framework with sector-specific liquidity constraints using volume and VIX data. Validated using COVID/post-COVID backtests.</li>
+    </ul>
+  </div>
 </body>
 </html>
