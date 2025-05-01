@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head><title>Experience</title></head>
+<head>
+  <meta charset="UTF-8">
+  <title>Experience</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fff; }
+    .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; text-align: center; }
+    nav a { margin: 0 12px; text-decoration: none; color: #4B0082; font-weight: bold; }
+    ul { text-align: left; display: inline-block; margin-top: 20px; }
+    li { margin-bottom: 20px; line-height: 1.6; }
+  </style>
+</head>
 <body>
-  <nav>
-    <a href="index.html">Home</a> | <a href="about.html">About Me</a> | <a href="projects.html">Projects</a> | <a href="misc.html">Misc</a> | <a href="Yixuan_Wu_Resume.QR.pdf">Resume</a>
-  </nav>
-  <h1>Professional Experience</h1>
+  <div class="container">
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About Me</a> |
+      <a href="projects.html">Projects</a> |
+      <a href="experience.html">Experience</a> |
+      <a href="misc.html">Misc</a> |
+      <a href="resume.html">Resume</a>
+    </nav>
 
-  <h3>Quantitative Research Intern – First State Cinda Fund</h3>
-  <ul>
-    <li>Built a multi-objective genetic programming framework for factor mining, using NSGA-II with IC and NDCG.</li>
-    <li>Achieved 21.7% annualized excess return and 1.45 Sharpe ratio on validation/test sets.</li>
-  </ul>
-
-  <h3>Data Analytics Intern – Guosheng Security</h3>
-  <ul>
-    <li>Built models predicting stock price movement from financial news (accuracy > 72%).</li>
-    <li>Ranked funds by NAV similarity using DTW to recommend alternatives.</li>
-  </ul>
-
-  <h3>Risk Management Intern – Fullgoal Fund</h3>
-  <ul>
-    <li>Automated real-time risk monitoring for 4,000+ stocks.</li>
-    <li>Improved variance reconciliation for semi-annual fund audits.</li>
-  </ul>
+    <h1>Experience</h1>
+    <ul>
+      <li><strong>Quantitative Research Intern – First State Cinda Fund:</strong> Built genetic programming framework for factor discovery using IC/NDCG objectives. Achieved 21.7% annualized return and 1.45 Sharpe on validation set.</li>
+      <li><strong>Data Analytics Intern – Guosheng Security:</strong> Predicted stock movements from financial news (72%+ accuracy). Applied DTW to recommend similar funds.</li>
+      <li><strong>Risk Management Intern – Fullgoal Fund:</strong> Automated stock delisting alerts. Reconciled fund variance for semiannual reports and created persistent audit tools.</li>
+    </ul>
+  </div>
 </body>
 </html>
